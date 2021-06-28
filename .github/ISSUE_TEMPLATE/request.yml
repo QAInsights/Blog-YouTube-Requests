@@ -40,8 +40,8 @@ body:
   - type: textarea
     id: problem-desc
     attributes:
-      label: Is your tutorial request related to a problem? Please describe.
-      description: ''
+      label: Is your tutorial request related to a problem?
+      description: 'Please describe your problem.'
       placeholder: Problem statement
       value: "Ex. I'm always frustrated when [...]"
     validations:
