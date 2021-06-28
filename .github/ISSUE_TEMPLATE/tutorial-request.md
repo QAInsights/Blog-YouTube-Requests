@@ -8,9 +8,10 @@ assignees: QAInsights
 ---
 
 **Tutorial request is for blog or video?**
-[]Blog
-[]YouTube
-[]Both
+Please add `x` inside the square brackets to check it.
+- [ ] Blog Article
+- [x] YouTube
+- [ ] Course
 
 **Technologies or Tools involved**
 A clear list of technologies, tools, languages involved.
