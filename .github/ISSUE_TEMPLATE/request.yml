@@ -52,8 +52,8 @@ body:
       label: Sponsor
       description: Are you willing to sponsor my content creation? Paid request will have higher priority.
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
     validations:
       required: true
   - type: textarea
