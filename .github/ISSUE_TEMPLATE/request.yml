@@ -1,29 +1,49 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: [bug, triage]
+name: Tutorial Request
+description: Blog or YouTube tutorial request form
+title: "[Request]: "
+labels: [blog, youtube]
 assignees:
-  - octocat
+  - qainsights
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out my request form.
   - type: input
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      description: How can I get in touch with you if we I more info?
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
+  - type: dropdown
+    id: type
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Tutorial Type
+      description: What type of content you want me to create?
+      options:
+        - Blog Article (Default)
+        - YouTube
+        - Course 
+    validations:
+      required: true
+  - type: textarea
+    id: tech-tools-list
+    attributes:
+      label: Please list out the technologies or tools involved.
+      description: Also tell me, the specific version, platform etc.
+      placeholder: List of technolgies and tools
+      value: "e.g. JMeter, Locust etc"
+    validations:
+      required: true
+  - type: textarea
+    id: problem-desc
+    attributes:
+      label: Is your tutorial request related to a problem? Please describe.
+      description: ''
+      placeholder: Problem statement
+      value: "Ex. I'm always frustrated when [...]"
     validations:
       required: true
   - type: dropdown
@@ -36,22 +56,11 @@ body:
         - 1.0.3 (Edge)
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: additional-context
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.      
   - type: checkboxes
     id: terms
     attributes:
