@@ -14,7 +14,7 @@ body:
     attributes:
       label: Contact Details
       description: How can I get in touch with you if I need more info?
-      placeholder: ex. email@example.com
+      placeholder: ex. email@example.com or social handles
     validations:
       required: false
   - type: dropdown
@@ -31,9 +31,9 @@ body:
   - type: textarea
     id: tech-tools-list
     attributes:
-      label: Please list out the technologies or tools involved.
+      label: Please list out the technologies or tools involved and its URLs.
       description: Also tell me, the specific version, platform etc.
-      placeholder: List of technolgies and tools
+      placeholder: List of technolgies, tools, and its URLs or repo.
       value: "e.g. JMeter, Locust etc"
     validations:
       required: true
